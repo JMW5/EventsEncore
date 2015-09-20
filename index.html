@@ -7,6 +7,10 @@
      <!-- Personal Styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -17,15 +21,24 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <!-- FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer' rel='stylesheet' type='text/css'>
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+
 
     <!-- RESPONSIVE MOBILE MENU -->
     <link rel="stylesheet" href="rmm-css/responsivemobilemenu.css" type="text/css"/>
     <script type="text/javascript" src="rmm-js/responsivemobilemenu.js"></script>
+
+
+    <!-- SLIPPERY -->
+    <link rel="stylesheet" href="css/slippry.css" />
+    <script src="js/slippry.min.js"></script>
+
+
+    <!-- WEDDING WIRE STYLESHEET -->
+    <link href='css/weddingwire.css' rel='stylesheet' type='text/css'>
+    <script src='//www.weddingwire.com/assets/vendor/widgets/my-reviews.js' type='application/javascript'></script>
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
@@ -36,14 +49,17 @@
 
 <!--NAVIGATION-->
 <div style="background: white;">
-    <div class="rmm" data-menu-style="minimal">
+    <div class="rmm" data-menu-style="minimal" id="nav-menu">
+    <div class="menu-logo"><img src="images/logo.png"></div>
         <ul class="navbar-custom">
-            <li><a href="" class="nav-links">HOME</a></li>
-            <li><a href="" class="nav-links">ABOUT US</a></li>
-            <li><a href="" class="nav-links">SERVICES</a></li>
+            <li><a href="index.html" class="nav-links">HOME</a></li>
+            <li><a href="about.html" class="nav-links">ABOUT US</a></li>
+            <li><a href="services.html" class="nav-links">SERVICES</a></li>
+            <li><a href="studio-rentals.html" class="nav-links">STUDIO RENTAL</a></li>
+            <li><a href="balloon-boutique.html" class="nav-links">BALLOON BOUTIQUE</a></li>
             <li><a href="" class="nav-links">PORTFOLIO</a></li>
             <li><a href="" class="nav-links">ENCORE HOPE</a></li>
-            <li><a href="" class="nav-links">CONTACT US</a></li>
+            <li><a href="contact.html" class="nav-links">CONTACT US</a></li>
         </ul>
     </div>
 </div>
@@ -51,15 +67,25 @@
 <!--=================================================-->
 
 
-<!--JUMBOTRON SECTION-->
-<div class="jumbotron0">
-    <div class="container text-center" id="hero-text">
-        <h1 class="welcome-to">Welcome to</h1>
-        <h1 class="events-encore-design">Events Encore Design</h1>
-        <br>
-        <button class="btn btn-lg btn-custom">EXPLORE SERVICES</button>
-    </div>
-</div>
+<!--JUMBOTRON SECTION (SLIPPERY)-->
+    <ul id="pictures-demo">
+      <li>
+        <img src="images/hero2.jpg" alt="" style="height: 700px;">
+      </li>
+      <li>
+        <img src="images/hero5.jpg"  alt="" style="height: 700px;">
+      </li>
+      <li>
+        <img src="images/hero3.jpg" alt="" style="height: 700px;">
+      </li>
+       <li>
+        <img src="images/hero4.jpg" alt="" style="height: 700px;">
+      </li>
+       <li>
+        <img src="images/hero.jpg" alt="" style="height: 700px;">
+      </li>
+    </ul>
+
 
 <!--END OF JUMBOTRON SECTION-->
 <!--=================================================-->
@@ -67,159 +93,66 @@
 
 
 <!--SERVICES SECTION-->
-<div class="services-section">
-    <div class="container">
-        <h1 class="text-center" id="header-title">Services</h1>
-        <br>
-        <div class="row text-center" id="individual-services">
-            <div class="col-md-3">
-                <a data-toggle="modal" data-target="#myModal" class="service-links">
-                <h3>ENCORE EFFORTLESS</h3>
-                <p>(Decor with Simplicity)</p>
-                <img class="service-images" src="images/effortless-service1.png" width="230px" height="220px">
-                <h4>+ READ MORE</h4>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a data-toggle="modal" data-target="#myModal2" class="service-links">
-                <h3>ENCORE EXCLUSIVE</h3>
-                <p>(Couture Décor)</p>
-                <img class="service-images" src="images/exclusive-service2.png" width="230px" height="220px">
-                <h4>+ READ MORE</h4>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a data-toggle="modal" data-target="#myModal3" class="service-links">
-                <h3>ENCORE AIR</h3>
-                <p>(Décor with Balloons)</p>
-                <img class="service-images" src="images/air-service3.png" width="230px" height="220px">
-                <h4>+ READ MORE</h4>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a data-toggle="modal" data-target="#myModal4" class="service-links">
-                <h3 style="white-space: nowrap">ENCORE POSH PARTIES</h3>
-                <p>(Small Celebrations with Big Style)</p>
-                <img class="service-images" src="images/posh-services4.png" width="230px" height="220px">
-                <h4>+ READ MORE</h4>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!--END OF SERVICES SECTION-->
 <!--=================================================-->
 
-
-
-<!--JUMBOTRON SECTION-->
-<div class="jumbotron1">
-    <div class="container">
-     <h1 class="jumbotron-text">ABOUT ENCORE EVENT DESIGN</h1>
-    </div>
-</div>
-<!--END OF JUMBOTRON SECTION-->
-<!--=================================================-->
-
-
-
-<!--ABOUT SECTION-->
+<!--REVIEW SECTION-->
 <div class="about-section">
     <div class="container">
-        <br>
-        <div class="row">
-            <div class="col-md-4">
-                <img class="about-image hidden-xs hidden-sm" src="images/about-us.jpg">
-            </div>
-            <div class="col-md-8 text-center" id="about-text">
-                <h4><em><strong>Encore Defintion</strong></em></h4>
-                <p>1. A demand by an audience for an additional performance, usually expressed by applause.</p>
-                <p>2. An additional performance in response to the demand of an audience.</p>
+        <h2 class="text-center" style="font-family: 'Josefin Sans', sans-serif; font-weight: 700;">Reviews</h2>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class='ww-reset ww-reviews-widget' id='ww-widget-reviews' style="max-width: 100%;">
+                    <div class='ww-reviews-placeholder'>
+                        Read all of our wedding reviews on our
+                        <a target="_blank" href="http://www.weddingwire.com/biz/encore-event-design-pittsburgh/ad06e626b3c52f4f.html">Encore Event Design</a>
+                        Storefront at
+                        <a alt="WeddingWire" href="http://www.weddingwire.com"><img src="//www.weddingwire.com/assets/widgets/logo/WWlogo-83x19.gif" alt="Wwlogo 83x19" /></a>
+                    </div>
+                </div><br>
+                <div class='ww-bca-2015 ww-reset'>
+                <a title="WeddingWire" class="ww-bca-top" href="http://www.weddingwire.com"><img alt="WeddingWire" src="//www.weddingwire.com/assets/badges/BCA-2015/BCA_2015-badge-top.png" />
+                </a><a title="Encore Event Design Reviews, Best Lighting &amp; Decor in Pittsburgh - 2015 Couples&#39; Choice Award Winner" class="ww-bca-bottom" href="http://www.weddingwire.com/reviews/encore-event-design-pittsburgh/ad06e626b3c52f4f.html"><img alt="Encore Event Design Reviews, Best Lighting &amp; Decor in Pittsburgh - 2015 Couples&#39; Choice Award Winner" src="//www.weddingwire.com/assets/badges/BCA-2015/BCA_2015-badge-bottom.png" />
+                </a><div class='ww-clear'>
+                &nbsp;
+                <img width="1" height="1" alt="" src="/apis/v3/tracker?partner_key=163r5mm3&amp;target_id=ad06e626b3c52f4f&amp;type=bca_2015" />
+                </div>
+                </div>
                 <br>
-                <p>
-                    This definition is what we strive for in every design….an event that will leave your guest raving and wanting more! We want you, the client, to have an unforgettable celebration that your friends and family will be talking about for years to come. We take great pride in our designs and go through every detail, no matter how small it may be. Delivering outstanding customer service is our top priority and we will not rest until you are completely satisfied! Every event should be fabulous in our opinion, so let
-                    Encore Event Design help bring your dream to event reality!
-                </p>
-                <p>
-                    Sincerely,<br>
-                    Stacey Barlow-Hill<br>
-                    Owner/Event Designer
-                </p>
+                <br>
             </div>
         </div>
+
     </div>
 </div>
-<!--END OF ABOUT SECTION-->
+<!--END OF REVIEW SECTION-->
 
 
 
 
-<!--JUMBOTRON SECTION-->
-<div class="jumbotron2">
-    <div class="container">
-        <h1 class="jumbotron-text">WHAT PEOPLE ARE SAYING...</h1>
-    </div>
-</div>
-<!--END OF JUMBOTRON SECTION-->
-<!--=================================================-->
 
 
 <!--TESTIMONIAL SECTION-->
-<div class="testimony-section">
-    <div class="container">
-        <div class="col-md-12 text-center">
-            <h1 class="text-center" id="header-title">Testimonials</h1>
-            <div id="myCarousel" class="carousel slide">
-                             <!-- Indicators -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <blockquote>
-                                      <p>We had a posh party Frozen themed Birthday party for our daughters 5th birthday. It was awesome! Stacey is very professional and her staff was very tentitive to our needs! Thank Encore Event Design for such a wonderful experience!</p>
-                                      <small>Someone famous <cite title="Source Title">Facebook.com</cite></small>
-                                    </blockquote>
-                                </div>
-                                <div class="item">
-                                    <blockquote>
-                                      <p>Encore Event Design is fantastic! Stacey is great and can transform any space into a beautiful event!</p>
-                                      <small>Someone from  <cite title="Source Title">Facebook.com</cite></small>
-                                    </blockquote>
-                                 </div>
-                                <div class="item">
-                                    <blockquote>
-                                      <p>Encore Event Design surpassed all my expectations. I had doubts on how they could transform my venue being that it was small and old looking but when Stacey was done with her magic I was amazed at what she was able to do with the space. I loved everything that was done with the venue. After they were done the venue looked like something done by David Tutera!!!!</p>
-                                      <small>Someone from  <cite title="Source Title">WeddingWire.com</cite></small>
-                                    </blockquote>
-                                </div>
-                            </div>
-                           <!--Controls-->
-                          <div class="carousel-controls">
-                              <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="fa fa-angle-double-left"></span></a>
-                              <a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="fa fa-angle-double-right"></span></a>
-                          </div>
-            </div><!-- End Carousel -->
-        </div>
-    </div>
-</div>
+
 <!--END OF TESTIMONIAL SECTION-->
 <!--=================================================-->
 
 
 
-<!--JUMBOTRON SECTION-->
-<div class="jumbotron3">
-    <div class="container">
-        <h1 class="jumbotron-text"></h1>
-    </div>
-</div>
-<!--END OF JUMBOTRON SECTION-->
-<!--=================================================-->
-
-
+<!-- FOOTER -->
 <footer class="footer vertical-container">
     <div class="container text-center">
-        Copyright &copy Encore Event Design 2015
+        <div class="row">
+            <div class="col-md-2"><i class="fa fa-pinterest" style="font-size: 3rem;"></i></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4">Copyright &copy Encore Events Design 2015</div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><i class="fa fa-facebook-square" style="font-size: 3rem;"></i></div>
+        </div>
     </div>
 </footer>
+<!-- END OF FOOTER -->
 
 
 
@@ -373,8 +306,12 @@
 </div>
 
 
+<script>
+  WeddingWire.createReview({"vendorId":"ad06e626b3c52f4f", "id":"ww-widget-reviews" });
+</script>
 
 
+<script src="js/slippery.js"></script>
 
 
 <script>
@@ -382,6 +319,8 @@
             interval:   4000
         });
 </script>
+
+
 
 
 </body>
