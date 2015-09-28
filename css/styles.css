@@ -23,6 +23,7 @@ img {
 .services,
 .about-us,
 .about-section,
+.social-section,
 .balloon-section,
 .portfolio-section,
 .encore-hope-section,
@@ -37,26 +38,30 @@ img {
     position: absolute;
     bottom: 0;
     width: 100%;
-
     height: 60px;
     background-color: #fff;
-
 }
 
 #nav-menu {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 .navbar-custom {
-    line-height: 3;
-    border-top: 1px solid black;
-    margin: 0px 0px;
+  border-top: 2px solid black;
+}
 
+.header-title {
+    padding-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .navbar-custom li a:hover {
     background-color: black;
     color: white;
+}
+
+.pinterest-section {
+  border-right: 1px solid black;
 }
 
 .vertical-container {
@@ -68,6 +73,10 @@ img {
   -webkit-justify-content: center;
           justify-content: center;
 }
+
+
+
+
 
 .social-icons-pinterest a,
 .social-icons-facebook a {
@@ -109,6 +118,12 @@ img {
     .carousel-inner .item img {
         height: 500px !important;
     }
+    .homepage-images1 {
+        text-align: right;
+    }
+    .homepage-images2 {
+        text-align: left;
+    }
 }
 
 
@@ -127,9 +142,18 @@ img {
 }
 
 
-@media (max-width: 320px) {
-  #facebook {
-    font-size: 2rem;
+@media (min-width: 320px) {
+  .homepage-images img {
+    padding: 10px 0px;
+  }
+
+  .header-title {
+    padding-bottom: 0px;
+  }
+
+  .pinterest-section {
+    padding-bottom: 50px;
+    border-right: none;
   }
 }
 
@@ -167,6 +191,33 @@ CAROUSEL STYLES
 .carousel-control.left {
     right: 40px;
 }
+
+
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
 
 
 
