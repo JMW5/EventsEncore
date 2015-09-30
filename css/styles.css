@@ -15,9 +15,29 @@ blockquote {
 
 img {
     box-shadow: 3px 3px 5px 6px #ccc;
-        -moz-box-shadow:    3px 3px 5px 6px #ccc;
-        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
 
+}
+
+input {
+  width: 40rem;
+}
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem; 
+}
+
+.paragraph-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
 }
 
 .services,
@@ -32,6 +52,15 @@ img {
 .affilates-section {
     background: url(../images/linen.png);
     padding: 70px 0px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.smaller-font {
+  font-size: 2.0rem !important;
 }
 
 .footer {
@@ -74,9 +103,26 @@ img {
           justify-content: center;
 }
 
+.imageContainer {
+    position: relative;
+    width: 23%;
+    padding-bottom: 23%;
+    float: left;
+    height: 0;
+    margin: 1%;
+}
 
 
+.portfolio-img {
+     width: 100%;
+     height: auto;
+     position: absolute;
+     left: 0;
+}
 
+.social-icons {
+  font-size: 3rem !important;
+}
 
 .social-icons-pinterest a,
 .social-icons-facebook a {
@@ -90,6 +136,20 @@ img {
 .social-icons-pinterest a:hover {
     color: red;
 }
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+    height: 100%;
+}
+
+/*ABOUT ME PAGE STYLES*/
+
+
 
 
 
