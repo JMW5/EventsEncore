@@ -40,6 +40,7 @@ input {
   font-size: 2.5rem;
 }
 
+
 .services,
 .about-us,
 .about-section,
@@ -147,6 +148,10 @@ input {
     height: 100%;
 }
 
+.flexslider {
+  margin-bottom: 0px !important;
+}
+
 /*ABOUT ME PAGE STYLES*/
 
 
@@ -176,7 +181,7 @@ input {
 
 @media (min-width: 1249px) {
     .carousel-inner .item img {
-        height: 500px !important;
+        height: auto !important;
     }
     .homepage-images1 {
         text-align: right;
