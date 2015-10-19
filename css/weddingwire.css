@@ -1773,6 +1773,9 @@ body .weddingwire-ui-tooltip {
     text-align: center;
     font-weight: bold
 }
+.ww-reviews-footer-img img {
+    box-shadow: none;
+}
 .ww-reviews-footer-text {
     line-height: 22px
 }

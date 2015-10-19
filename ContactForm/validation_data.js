@@ -1,0 +1,3 @@
+ var data_validation = '{"fb-submit-button":{"hover":{"background-image":""}},"item3_text_1":{"maxlength":"254","required":true},"item4_text_1":{},"item5_text_1":{},"item6_text_1":{},"item7_text_1":{},"item8_text_1":{},"item9_text_1":{},"item10_text_1":{"required":false},"item11_text_1":{"required":true},"item12_text_1":{},"item13_select_1":{},"item14_textarea_1":{"maxlength":"10000"}}';
+ var data_jsplugins = '[]';
+ var data_cssplugins = '[]';

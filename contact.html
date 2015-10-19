@@ -7,6 +7,8 @@
      <!-- Personal Styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
+    <meta charset="utf-8" />
+
     <!-- FONT ICONS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -34,9 +36,18 @@
     <link href='css/weddingwire.css' rel='stylesheet' type='text/css'>
     <script src='//www.weddingwire.com/assets/vendor/widgets/my-reviews.js' type='application/javascript'></script>
 
-    <script src='js/contact.js'></script>
+    <script type="text/javascript" src="ContactForm/common/js/form_init.js" data-name=""
+    id="form_init_script">
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="ContactForm/theme/default/css/default.css?version=425"
+    id="theme" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <meta name="description" content="Encore Event Design is Pittsburgh's premier event design company. Delivering outstanding customer service is our
+    top priority and we will not rest until you are completely satisfied! We have the skills and creativity to make every event unforgettable 
+    and spectacular.">
 
 </head>
 <body>
@@ -85,16 +96,23 @@
                 <p class="paragraph-text">Pittsburgh, PA 15220</p>
                 <p class="paragraph-text">(In the Historic West End)</p>
                 <p class="paragraph-text">Phone Hours</p>
-                <p class="paragraph-text smaller-font">10am-4pm</p>
-                <p class="paragraph-text smaller-font">Mon-Wed, Friday</p>
-                <p class="paragraph-text smaller-font">Closed Thursdays</p>
-
+                <p class="paragraph-text smaller-font">Monday 10am-4pm</p>
+                <p class="paragraph-text smaller-font">Tuesday 10am-4pm</p>
+                <p class="paragraph-text smaller-font">Wednesday 10am-4pm</p>
+                <p class="paragraph-text smaller-font">Thursday Closed</p>
+                <p class="paragraph-text smaller-font">Friday 10am 4pm</p>
+                <p class="paragraph-text smaller-font">Saturday 10am-2pm</p>
+                <p class="paragraph-text smaller-font">Sunday Closed</p>
+                <br>
+                <p class="paragraph-text smaller-font">
+                  For the Balloon Boutique hours <a href="balloon-boutique.html">go here</a>
+                </p>
                 <p class="paragraph-text smaller-font">Ph: 412-923-5355</p>
                 <p class="paragraph-text smaller-font">Fax: 412-924-8683</p>
                 <p class="paragraph-text smaller-font">Events@EncoreEventDesign.com</p> 
 
                 <!--FORM STARTS HERE-->
-                <form class="form-horizontal">
+                <form action="contact.php" method="post" class="form-horizontal">
                 <div class="form-group form-style" id="contact_form">
                     <div id="contact_results"></div>
                     <div id="contact_body" class="">
@@ -123,16 +141,16 @@
                             <input type="email" name="email" required="true" class="input-field"/>
                         </label><br>
                         <label><span>Phone <span class="required">*</span></span><br>
-                            <input type="text" name="phone1" maxlength="10" placeholder=""  required="true" class="tel-number-field"/>
+                            <input type="text" name="phone" maxlength="10" placeholder=""  required="true" class="tel-number-field"/>
                         </label><br>
                         <label><span>How did you hear about us? <span class="required">*</span></span><br>
                             <input type="text" name="feedback-question" id="feedback-question" required="true" class="input-field"/>
                         </label><br>
 
                             <label for="subject"><span>Whats the best way to reach you?</span><br>
-                            <select name="subject" class="select-field">
-                            <option value="Email">Email</option>
-                            <option value="Phone">Phone</option>
+                            <select name="reachout" class="select-field">
+                                <option value="Email">Email</option>
+                                <option value="Phone">Phone</option>
                             </select>
                         </label><br>
                         <label for="field5"><span>Comments and Questions <span class="required">*</span></span><br>

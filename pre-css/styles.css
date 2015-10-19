@@ -1,0 +1,292 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+blockquote {
+    font-family: 'helvetica';
+
+}
+
+img {
+    box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+
+}
+
+input {
+  width: 40rem;
+}
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem; 
+}
+
+.paragraph-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+
+.services,
+.encore-air,
+.about-us,
+.about-section,
+.social-section,
+.balloon-section,
+.portfolio-section,
+.encore-hope-section,
+.contact-section,
+.rental-section,
+.affilates-section {
+    background: url(../images/linen.png);
+    padding: 70px 0px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.smaller-font {
+  font-size: 2.0rem !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+
+#nav-menu {
+    border-bottom: 2px solid black;
+}
+
+.navbar-custom {
+  border-top: 2px solid black;
+}
+
+.header-title {
+    padding-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar-custom li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.pinterest-section {
+  border-right: 1px solid black;
+}
+
+.vertical-container {
+  height: 60px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.imageContainer {
+    position: relative;
+    width: 23%;
+    padding-bottom: 23%;
+    float: left;
+    height: 0;
+    margin: 1%;
+}
+
+
+.portfolio-img {
+     width: 100%;
+     height: auto;
+     position: absolute;
+     left: 0;
+}
+
+.social-icons {
+  font-size: 3rem !important;
+}
+
+.social-icons-pinterest a,
+.social-icons-facebook a {
+    color: black;
+}
+
+.social-icons-facebook a:hover {
+    color: blue;
+}
+
+.social-icons-pinterest a:hover {
+    color: red;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+    height: 100%;
+}
+
+.flexslider {
+  margin-bottom: 0px !important;
+}
+
+
+
+/*ABOUT ME PAGE STYLES*/
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1001px) {
+    .jumbotron-text {
+        font-size: 45px;
+    }
+}
+
+
+
+@media (max-width: 535px) {
+    #nav-menu {
+        height: auto;
+    }
+}
+
+
+
+@media (min-width: 1249px) {
+    .carousel-inner .item img {
+        height: auto !important;
+    }
+    .homepage-images1 {
+        text-align: right;
+    }
+    .homepage-images2 {
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 990px) {
+    .jumbotron-text {
+        font-size: 32px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .menu-logo {
+        padding: 15px;
+    }
+}
+
+
+@media (min-width: 320px) {
+  .homepage-images img {
+    padding: 10px 0px;
+  }
+
+  .header-title {
+    padding-bottom: 0px;
+  }
+
+  .pinterest-section {
+    padding-bottom: 50px;
+    border-right: none;
+  }
+}
+
+
+
+
+/* ################
+CAROUSEL STYLES
+################# */
+
+.carousel-inner .item img {
+    width:100%;
+    height:100%;
+}
+.item .thumbnail {
+    margin-bottom:0;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+}
+.carousel-control {
+    background: transparent;
+    color:#999;
+    padding: 4px 0;
+    width:26px;
+    top:auto;
+    left:auto;
+    bottom:0;
+    opacity:1;
+    text-shadow:none;
+}
+.carousel-control.right {
+    right:10px;
+}
+.carousel-control.left {
+    right: 40px;
+}
+
+
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+
+
+
