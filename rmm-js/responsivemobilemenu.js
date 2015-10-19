@@ -54,10 +54,10 @@ function getMobileMenu() {
 	$('.rmm').each(function() {
 				var menutitle = $(this).attr("data-menu-title");
 				if ( menutitle == "" ) {
-					menutitle = "Welcome";
+					menutitle = "";
 				}
 				else if ( menutitle == undefined ) {
-					menutitle = "<h4>Call to speak to a Design Expert: 412-923-5355</h4>";
+					menutitle = "";
 				}
 				var $menulist = $(this).children('.rmm-main-list').html();
 				var $menucontrols ="<div class='rmm-toggled-controls'><div class='rmm-toggled-title'>" + menutitle + "</div><div class='rmm-button'><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div></div>";
