@@ -54,7 +54,7 @@
 
 <!--NAVIGATION-->
 <div>
-    <p class="paragraph-text" style="padding: 10px;">Call to speak to a Design Expert: (412)923-5355</p>
+    <p class="paragraph-text" id="menu-number" style="padding: 10px;">Call to speak to a Design Expert: (412)923-5355</p>
     <div class="rmm" data-menu-style="minimal" id="nav-menu">
     <div class="menu-logo"><img src="images/logo.png" style="box-shadow: none;"></div>
         <ul class="navbar-custom">
@@ -190,17 +190,75 @@
 <!-- FOOTER -->
 <footer class="footer vertical-container">
     <div class="container text-center">
-        <div class="row">
-            <div class="col-md-1 social-icons-pinterest"><a href="https://www.pinterest.com/encoreed/"><i class="fa fa-pinterest social-icons"></i></a></div>
-            <div class="col-md-1 social-icons-facebook"><a href="https://www.facebook.com/encoreeventdesign?pnref=about.overview"><i class="fa fa-facebook-square social-icons"></i></a></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-4">Copyright &copy Encore Event Design 2015</div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
+        <div class="row"> 
+           <div class="col-md-6 text-left">
+            <h2>3 mins from Downtown Pittsburgh...</h2>    
+            <div class="row text-left">
+                <div class="col-md-4">
+                    <p>452 South Main Street</p>
+                    <p>Pittsburgh, PA 15220</p>
+                    <p>(In the Historic West End)</p>
+                    <p>Ph: 412-923-5355</p>
+                    <p>Fax: 412-924-8683</p>
+                </div>
+                <div class="col-md-8">
+                    <div id="street-view"></div>
+                </div>
+            </div> 
+            <br>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>FOLLOW US AT:
+                    <a href="https://www.pinterest.com/encoreed/"><i class="fa fa-pinterest pinterest"></i></a>
+                    <a href="https://www.facebook.com/encoreeventdesign?pnref=about.overview"><i class="fa fa-facebook-square facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus-square google"></i></a>
+                    </h3>
+                </div>
+            </div>     
+           </div>
+           <div class="col-md-2 text-left footer-category">              
+               <a href="services.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Linen Rentals</p></span></a>
+               <a href="services.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Chair Covers</p></span></a>
+               <a href="services.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Custom Linens</p></span></a>
+               <a href="services.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Centerpiece Rentals</p></span></a>
+               <a href="services.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Up-lighting/Monograms</p></span></a>
+               <a href="services.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Backdrops</p></span></a>
+               <a href="services.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Ceromony Decor</p></span></a>
+               <a href="services.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Balloon Decor</p></span></a>
+           </div>
+           <div class="col-md-2 text-left footer-category">
+               <a href="balloon-boutique.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Party Balloon</p></span></a>
+               <a href="balloon-boutique.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Corporate Balloons</p></span></a>
+               <a href="balloon-boutique.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Corporate Events</p></span></a>
+           </div>
+           <div class="col-md-2 text-left footer-category">          
+               <a href="studio-rentals.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Birthday Party</p></span></a> 
+               <a href="studio-rentals.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Baby Shower</p></span></a>
+               <a href="studio-rentals.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Bridal Shower</p></span></a>
+               <a href="studio-rentals.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Venue Rental</p></span></a>
+               <a href="studio-rentals.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Meeting Space</p></span></a>
+           </div>
         </div>
     </div>
 </footer>
 <!-- END OF FOOTER -->
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqBmFiFoyJQltklddSmjcZEeZOkyqEClc&signed_in=true&callback=initialize">
+</script>
+<script>
+    var panorama;
+    function initialize() {
+      panorama = new google.maps.StreetViewPanorama(
+          document.getElementById('street-view'),
+          {
+            position: {lat: 40.441096, lng: -80.034690},
+            pov: {heading: -25, pitch: -1},
+            zoom: 1,
+            disableDefaultUI: true
+          });
+    }
+
+</script>
 
 <script>
 (function(d, t) {var g = d.createElement(t);var s = d.getElementsByTagName(t)[0];g.id = "yelp-biz-badge-script-plain-n6zdQZhSoT81cCgbBIB4NQ";g.src = "//yelp.com/biz_badge_js/en_US/plain/n6zdQZhSoT81cCgbBIB4NQ.js";s.parentNode.insertBefore(g, s);}(document, 'script'));
