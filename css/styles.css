@@ -55,8 +55,26 @@ input {
     padding: 50px 0px;
 }
 
-.about-section {
-  padding-bottom: 335px;
+.about-section,
+.about-us,
+.services,
+.rental-section,
+.balloon-section,
+.portfolio-section,
+.encore-hope-section,
+.affilates-section {
+  padding-bottom: 345px !important;
+}
+
+.about-section,
+.about-us,
+.services,
+.rental-section,
+.balloon-section,
+.portfolio-section,
+.encore-hope-section,
+.contact-section {
+  padding-bottom: 345px !important;
 }
 
 .footer-flex {
