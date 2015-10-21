@@ -48,9 +48,9 @@
 
 <!--NAVIGATION-->
 <div>
-    <p class="paragraph-text" id="menu-number" style="padding: 10px;">Call to speak to a Design Expert: (412)923-5355</p>
+    <p class="paragraph-text" id="menu-number">Call to speak to a Design Expert:<br> (412)923-5355</p>
     <div class="rmm" data-menu-style="minimal" id="nav-menu">
-    <div class="menu-logo"><img src="images/logo.png" style="box-shadow: none;"></div>
+    <div class="menu-logo"><a href="index.html"><img src="images/logo.png" style="box-shadow: none;"></a></div>
         <ul class="navbar-custom">
             <li><a href="index.html" class="nav-links">HOME</a></li>
             <li><a href="about.html" class="nav-links">ABOUT US</a></li>
@@ -170,11 +170,81 @@
                <a href="studio-rentals.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Bridal Shower</p></span></a>
                <a href="studio-rentals.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Venue Rental</p></span></a>
                <a href="studio-rentals.html" class="footer-paragraph"><span style="cursor: pointer;"><p>Meeting Space</p></span></a>
+               <br>
+               <br>
+               <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">PLAN YOUR EVENT</a>
            </div>
         </div>
     </div>
 </footer>
 <!-- END OF FOOTER -->
+
+<!--CONTACT MODAL-->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3 id="myModalLabel" class="text-center">Plan Your Event With Encore!</h3>
+      </div>
+      <div class="modal-body">
+        <!--FORM STARTS HERE-->
+        <form action="contact.php" method="post" class="form-horizontal text-center">
+        <div class="form-group form-style" id="contact_form">
+            <div id="contact_results"></div>
+            <div id="contact_body" class="">
+                <label><span>Name <span class="required">*</span></span><br>
+                    <input type="text" name="name" id="name" required="true" class="input-field"/>
+                </label><br>
+                <label><span>Date of Event <span class="required">*</span></span><br>
+                    <input type="text" name="date-of-event" id="date-of-event" required="true" class="input-field"/>
+                </label><br>
+                <label><span>Type of Event <span class="required">*</span></span><br>
+                    <input type="text" name="type-of-event" id="type-of-event" required="true" class="input-field"/>
+                </label><br>
+                <label><span>Venue <span class="required">*</span></span><br>
+                    <input type="text" name="venue" id="venue" required="true" class="input-field"/>
+                </label><br>
+                <label><span>Colors/Theme <span class="required">*</span></span><br>
+                    <input type="text" name="color-themes" id="color-themes" required="true" class="input-field"/>
+                </label><br>
+                <label><span>Approximate # of guests <span class="required">*</span></span><br>
+                    <input type="text" name="number-of-guest" id="number-of-guest" required="true" class="input-field"/>
+                </label><br>
+                <label><span>Services interested in <span class="required">*</span></span><br>
+                    <input type="text" name="service" id="service" required="true" class="input-field"/>
+                </label><br>
+                <label><span>Email <span class="required">*</span></span><br>
+                    <input type="email" name="email" required="true" class="input-field"/>
+                </label><br>
+                <label><span>Phone <span class="required">*</span></span><br>
+                    <input type="text" name="phone" maxlength="10" placeholder=""  required="true" class="tel-number-field"/>
+                </label><br>
+                <label><span>How did you hear about us? <span class="required">*</span></span><br>
+                    <input type="text" name="feedback-question" id="feedback-question" required="true" class="input-field"/>
+                </label><br>
+
+                    <label for="subject"><span>Whats the best way to reach you?</span><br>
+                    <select name="reachout" class="select-field">
+                        <option value="Email">Email</option>
+                        <option value="Phone">Phone</option>
+                    </select>
+                </label><br>
+                <label for="field5"><span>Comments and Questions <span class="required">*</span></span><br>
+                    <textarea name="message" id="message" class="textarea-field" required="true"></textarea>
+                </label><br>
+                <label>
+                    <span>&nbsp;</span><input type="submit" id="submit_btn" value="Submit" />
+                </label>
+            </div>
+        </div> 
+        </form>
+        <!--FORM ENDS HERE-->
+      </div>
+    </div>
+  </div>
+</div>
+<!--END OF CONTACT MODAL-->
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqBmFiFoyJQltklddSmjcZEeZOkyqEClc&signed_in=true&callback=initialize">
 </script>

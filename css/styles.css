@@ -66,21 +66,10 @@ input {
   padding-bottom: 345px !important;
 }
 
-.about-section,
-.about-us,
-.services,
-.rental-section,
-.balloon-section,
-.portfolio-section,
-.encore-hope-section,
-.contact-section {
-  padding-bottom: 345px !important;
-}
-
 #menu-number {
   text-align: right;
   margin-bottom: 0;
-  padding: 10px;
+  padding: 10px 10px 0px 0px;
 }
 
 .list {
@@ -196,16 +185,6 @@ input {
 
 .social-icons-pinterest a:hover {
     color: red;
-}
-
-.rotate90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-
-    height: 100%;
 }
 
 .flexslider {
