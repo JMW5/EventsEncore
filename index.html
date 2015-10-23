@@ -40,20 +40,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqBmFiFoyJQltklddSmjcZEeZOkyqEClc&signed_in=true&callback=initialize">
-    </script>
-    <script>
-        var panorama;
-        function initialize() {
-          panorama = new google.maps.StreetViewPanorama(
-              document.getElementById('street-view'),
-              {
-                position: {lat: 40.441096, lng: -80.034690},
-                pov: {heading: -25, pitch: -1},
-                zoom: 1,
-                disableDefaultUI: true
-              });
-        }
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqBmFiFoyJQltklddSmjcZEeZOkyqEClc&signed_in=true&callback=initialize">
     </script>
 
 </head>
@@ -72,7 +59,6 @@
             <li><a href="services.html" class="nav-links">SERVICES</a></li>
             <li><a href="studio-rentals.html" class="nav-links">STUDIO RENTAL</a></li>
             <li><a href="balloon-boutique.html" class="nav-links">BALLOON BOUTIQUE</a></li>
-            <li><a href="portfolio.html" class="nav-links">PORTFOLIO</a></li>
             <li><a href="encore-hope.html" class="nav-links">ENCORE HOPE</a></li>
             <li><a href="contact.html" class="nav-links">CONTACT US</a></li>
         </ul>
@@ -127,14 +113,25 @@
 <div class="services-section">
     <div class="container">
         <div class="row text-center">
-            <div class="col-md-4">
-                <a href="services.html"><img src="images/home-services.jpg" class="img-responsive"></a>
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-left">
                 <a href="studio-rentals.html"><img src="images/home-services1.jpg" class="img-responsive"></a>
+                <br>
+                <p class="paragraph-text">Are you planning an intimate celebration of 60 people or less?  Let us host it for you in our studio.  Our celebration pricing includes our exclusive decor.</p>
+                <a href="studio-rentals.html" class="btn btn-primary">Learn More</a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-left">
+                <a href="services.html"><img src="images/home-services.jpg" class="img-responsive"></a>
+                <br>
+                <p class="paragraph-text">Encore Effortless will take the stress out of decorating your next event. We offer a wide range of services that will make your next event unforgettable.</p>
+                <a href="services.html" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-md-4 text-left">
                 <a href="balloon-boutique.html"><img src="images/home-services2.jpg" class="img-responsive"></a>
+                <br>
+                <p class="paragraph-text">The Encore Balloon Boutique offers balloons and gifts for all occasions. Whether you need just 1 or 100 we've got you covered.</p>
+                <br>
+                <br>
+                <a href="balloon-boutique.html" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </div>
@@ -266,6 +263,21 @@
     </div>
 </footer>
 <!-- END OF FOOTER -->
+
+<script>
+    var panorama;
+    function initialize() {
+      panorama = new google.maps.StreetViewPanorama(
+          document.getElementById('street-view'),
+          {
+            position: {lat: 40.441096, lng: -80.034690},
+            pov: {heading: -25, pitch: -1},
+            zoom: 1,
+            disableDefaultUI: true
+          });
+    };
+    
+</script>
 
 
 <!--CONTACT MODAL-->
