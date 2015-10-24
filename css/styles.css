@@ -242,18 +242,20 @@ input {
 }
 
 
-@media (min-width: 320px) {
-  .homepage-images img {
-    padding: 10px 0px;
+/*MOBILE*/
+@media (max-width: 475px) {
+  .about-section,
+  .about-us,
+  .services,
+  .rental-section,
+  .balloon-section,
+  .encore-hope-section,
+  .contact-section {
+    padding-bottom: 1275px !important;
   }
 
-  .header-title {
-    padding-bottom: 0px;
-  }
-
-  .pinterest-section {
-    padding-bottom: 50px;
-    border-right: none;
+  .learn-more {
+    text-align: center !important;
   }
 }
 
