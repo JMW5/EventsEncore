@@ -40,9 +40,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqBmFiFoyJQltklddSmjcZEeZOkyqEClc&signed_in=true&callback=initialize">
-    </script>
-
 </head>
 <body>
 
@@ -199,7 +196,6 @@
         </div>
         </div>
         <br>
-        
     </div>
 </div>
 <!--END OF REVIEW SECTION-->
@@ -263,21 +259,6 @@
     </div>
 </footer>
 <!-- END OF FOOTER -->
-
-<script>
-    var panorama;
-    function initialize() {
-      panorama = new google.maps.StreetViewPanorama(
-          document.getElementById('street-view'),
-          {
-            position: {lat: 40.441096, lng: -80.034690},
-            pov: {heading: -25, pitch: -1},
-            zoom: 1,
-            disableDefaultUI: true
-          });
-    };
-    
-</script>
 
 
 <!--CONTACT MODAL-->
@@ -348,7 +329,22 @@
 <!--END OF CONTACT MODAL-->
 
 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqBmFiFoyJQltklddSmjcZEeZOkyqEClc&signed_in=true&callback=initialize">
+</script>
+<script>
+    var panorama;
+    function initialize() {
+      panorama = new google.maps.StreetViewPanorama(
+          document.getElementById('street-view'),
+          {
+            position: {lat: 40.441096, lng: -80.034690},
+            pov: {heading: -25, pitch: -1},
+            zoom: 1,
+            disableDefaultUI: true
+          });
+    }
 
+</script>
 
 <script>
   WeddingWire.createReview({"vendorId":"ad06e626b3c52f4f", "id":"ww-widget-reviews" });
