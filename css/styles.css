@@ -160,6 +160,10 @@ input {
   color: #dd4b39;
 }
 
+.home-padding {
+  padding-bottom: 20px
+}
+
 .caro-image img {
     width: auto;
     height: 625px;
@@ -256,6 +260,15 @@ input {
 
   .learn-more {
     text-align: center !important;
+  }
+
+  .smaller-img {
+    height: 200px !important;
+  }
+
+  .smaller-img2 {
+    height: 105px !important;
+    width: 200px !important;
   }
 
 }
