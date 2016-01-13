@@ -24,6 +24,11 @@ input {
   width: 40rem;
 }
 
+.btn-custom {
+  background-color: black;
+  color: white;
+}
+
 .title {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
@@ -39,8 +44,13 @@ input {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2.5rem;
 }
+.paragraph-text-events {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
+}
 
 .services-section,
+.news-events-section,
 .services,
 .about-us,
 .about-section,
@@ -51,8 +61,8 @@ input {
 .contact-section,
 .rental-section,
 .affilates-section {
-    background: url(../images/linen.png);
     padding: 50px 0px;
+    background: url(../images/linen.png);
 }
 
 .about-section,
@@ -64,6 +74,11 @@ input {
 .encore-hope-section,
 .affilates-section {
   padding-bottom: 345px !important;
+}
+
+.news-events {
+  margin-bottom: 320px;
+
 }
 
 #menu-number {
