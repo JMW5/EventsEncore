@@ -1,6 +1,10 @@
 body {
     padding: 0;
     margin: 0;
+<<<<<<< HEAD
+=======
+    margin-bottom: 60px;
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 }
 
 html {
@@ -13,6 +17,7 @@ blockquote {
 
 }
 
+<<<<<<< HEAD
 img {
     box-shadow: 3px 3px 5px 6px #ccc;
     -moz-box-shadow:    3px 3px 5px 6px #ccc;
@@ -286,17 +291,152 @@ input {
     width: 200px !important;
   }
 
+=======
+
+.btn-custom  {
+    background-color: purple;
+}
+
+.navi {
+    margin-bottom: 0;
+
+}
+
+#individual-services {
+    font-family: 'PT Serif', serif;
+}
+
+#about-text {
+    font-family: 'helvetica', serif;
+    font-size: 1.9rem;
+}
+
+.jumbotron0 {
+    height: 550px;
+    background: url(../images/hero.jpg) center fixed;
+    background-size: cover;
+
+    color: white;
+    margin: 0;
+    margin-bottom: 0;
 }
 
 
 
+.jumbotron1 {
+    height: 250px;
+    background: url(../images/hero.jpg) center fixed;
+    background-size: cover;
 
+    color: white;
+    margin: 0;
+}
+
+.jumbotron2,
+.jumbotron3 {
+    height: 250px;
+    background: url(../images/hero2.jpg) center fixed;
+    background-size: cover;
+
+    color: white;
+    margin: 0;
+}
+
+
+
+.jumbotron-text {
+    text-align: center;
+    line-height: 200px;
+    font-family: 'Noticia Text', serif;
+    font-size: 72px;
+    white-space: nowrap;
+}
+
+
+.services-section,
+.about-section,
+.testimony-section {
+    background: url(../images/small_tiles.png);
+    height: auto;
+    overflow: hidden;
+    padding: 55px 0;
+}
+
+.service-images,
+.about-images {
+    text-align: center;
+    border-radius: 140px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    height: 60px;
+    background-color: #fff;
+
+}
+
+
+
+.modal-dialog {
+    width: 1200px;
+}
+
+.modal-content {
+  width: 900px;
+  margin-left: -150px;
+}
+
+.service-links {
+    text-decoration: none;
+    color: black;
+}
+
+.service-links:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #553A5E;
+
+}
+
+.navbar-custom {
+    line-height: 3;
+}
+
+.navbar-custom li a:hover {
+    background-color: purple;
+    color: white;
+}
+
+.vertical-container {
+  height: 60px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
+}
+
+
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 /* ################
 CAROUSEL STYLES
 ################# */
 
 .carousel-inner .item img {
     width:100%;
+<<<<<<< HEAD
+=======
+    height:100%;
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 }
 .item .thumbnail {
     margin-bottom:0;
@@ -323,6 +463,7 @@ CAROUSEL STYLES
 }
 
 
+<<<<<<< HEAD
 
 .carousel-fade .carousel-inner .item {
   opacity: 0;
@@ -352,3 +493,83 @@ CAROUSEL STYLES
 
 
 
+=======
+#hero-text {
+    position: relative;
+    top: 20%;
+    font-family: 'Noticia Text', serif;
+}
+
+#header-title {
+    font-family: 'IM Fell Great Primer', serif;
+}
+
+.welcome-to {
+    font-size: 72px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.events-encore-design {
+    font-size: 82px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+
+
+
+
+.links li {
+
+}
+
+
+.links li a {
+    color: white;
+}
+
+
+
+
+
+
+
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,.nav-pills > li > a:hover {
+text-decoration: none;
+font-weight: bold;
+border-radius:0px;
+border-bottom-width: 4px;
+border-bottom-style: solid;
+border-bottom-color: #FF6600;
+    color: #000 !important;
+  background-color: transparent !important;
+}
+.nav-pills > li > a{
+    border-radius:0px;
+}
+
+
+@media (max-width: 1001px) {
+    .jumbotron-text {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 674px) {
+    .jumbotron-text {
+        font-size: 32px;
+    }
+
+
+}
+
+@media (max-width: 492px) {
+    .jumbotron-text {
+        font-size: 24px;
+    }
+
+
+}
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39

@@ -10,6 +10,7 @@ License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 
 */
 
+<<<<<<< HEAD
 function responsiveMobileMenu() {
 		$('.rmm').each(function() {
 
@@ -18,6 +19,16 @@ function responsiveMobileMenu() {
 			$(this).children('ul').addClass('rmm-main-list');	// mark main menu list
 
 
+=======
+function responsiveMobileMenu() {	
+		$('.rmm').each(function() {
+			
+			
+			
+			$(this).children('ul').addClass('rmm-main-list');	// mark main menu list
+			
+			
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 			var $style = $(this).attr('data-menu-style');	// get menu style
 				if ( typeof $style == 'undefined' ||  $style == false )
 					{
@@ -26,14 +37,22 @@ function responsiveMobileMenu() {
 				else {
 						$(this).addClass($style);
 					}
+<<<<<<< HEAD
 
 
 			/* 	width of menu list (non-toggled) */
 
+=======
+					
+					
+			/* 	width of menu list (non-toggled) */
+			
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 			var $width = 0;
 				$(this).find('ul li').each(function() {
 					$width += $(this).outerWidth();
 				});
+<<<<<<< HEAD
 
 			// if modern browser
 
@@ -45,11 +64,25 @@ function responsiveMobileMenu() {
 				$(this).css('width' , $width*1.05+'px');
 			}
 
+=======
+				
+			// if modern browser
+			
+			if ($.support.leadingWhitespace) {
+				$(this).css('max-width' , $width*1.05+'px');
+			}
+			// 
+			else {
+				$(this).css('width' , $width*1.05+'px');
+			}
+		
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 	 	});
 }
 function getMobileMenu() {
 
 	/* 	build toggled dropdown menu list */
+<<<<<<< HEAD
 
 	$('.rmm').each(function() {
 				var menutitle = $(this).attr("data-menu-title");
@@ -58,6 +91,16 @@ function getMobileMenu() {
 				}
 				else if ( menutitle == undefined ) {
 					menutitle = "";
+=======
+	
+	$('.rmm').each(function() {	
+				var menutitle = $(this).attr("data-menu-title");
+				if ( menutitle == "" ) {
+					menutitle = "Menu";
+				}
+				else if ( menutitle == undefined ) {
+					menutitle = "Menu";
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 				}
 				var $menulist = $(this).children('.rmm-main-list').html();
 				var $menucontrols ="<div class='rmm-toggled-controls'><div class='rmm-toggled-title'>" + menutitle + "</div><div class='rmm-button'><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div></div>";
@@ -67,12 +110,21 @@ function getMobileMenu() {
 }
 
 function adaptMenu() {
+<<<<<<< HEAD
 
 	/* 	toggle menu on resize */
 
 	$('.rmm').each(function() {
 			var $width = $(this).css('max-width');
 			$width = $width.replace('px', '');
+=======
+	
+	/* 	toggle menu on resize */
+	
+	$('.rmm').each(function() {
+			var $width = $(this).css('max-width');
+			$width = $width.replace('px', ''); 
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 			if ( $(this).parent().width() < $width*1.05 ) {
 				$(this).children('.rmm-main-list').hide(0);
 				$(this).children('.rmm-toggled').show(0);
@@ -82,7 +134,11 @@ function adaptMenu() {
 				$(this).children('.rmm-toggled').hide(0);
 			}
 		});
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 }
 
 $(function() {
@@ -90,9 +146,15 @@ $(function() {
 	 responsiveMobileMenu();
 	 getMobileMenu();
 	 adaptMenu();
+<<<<<<< HEAD
 
 	 /* slide down mobile menu on click */
 
+=======
+	 
+	 /* slide down mobile menu on click */
+	 
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 	 $('.rmm-toggled, .rmm-toggled .rmm-button').click(function(){
 	 	if ( $(this).is(".rmm-closed")) {
 		 	 $(this).find('ul').stop().show(300);
@@ -102,11 +164,20 @@ $(function() {
 		 	$(this).find('ul').stop().hide(300);
 		 	 $(this).addClass("rmm-closed");
 	 	}
+<<<<<<< HEAD
 
 	});
+=======
+		
+	});	
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 
 });
 	/* 	hide mobile menu on resize */
 $(window).resize(function() {
  	adaptMenu();
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39

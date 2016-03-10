@@ -256,7 +256,11 @@ border-bottom-right-radius: 5px;
 	border-bottom:1px solid #3c5779;
 	border-top:1px solid #3c5779;
 }
+<<<<<<< HEAD
 .rmm.sapphire .rmm-toggled ul li:first-child a {
+=======
+.rmm.sapphire .rmm-toggled ul li:first-child a { 
+>>>>>>> 3b35aeb46fd5b3f15dcf7f3ab59beef660b8ed39
 	border-top:1px solid #3c5779 !important;
 }
 
