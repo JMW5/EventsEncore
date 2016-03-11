@@ -49,6 +49,18 @@ input {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2.5rem;
 }
+.paragraph-text-blog {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+}
+.paragraph-text-blog-sidebar {
+  margin-top: 3%;
+  line-height: 35px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.paragraph-text-blog-sidebar li {
+  font-size: 2rem;
+}
 .paragraph-text-events {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 17px;
@@ -137,6 +149,25 @@ input {
 .pinterest-section {
   border-right: 1px solid black;
 }
+
+hr {
+  margin-top: 50px !important;
+}
+
+.blog-listing {
+  margin-top: 5%;
+}
+
+.blog-listing h3, .sidebar-blog h3 {
+  margin: 0;
+}
+
+
+.sidebar-blog {
+  margin-top: 3%;
+  background-color: lightgray;
+}
+
 
 .vertical-container {
   height: 320px;
